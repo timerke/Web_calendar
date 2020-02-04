@@ -1,0 +1,243 @@
+* {
+    font-family: Montserrat;
+    margin     : 0 auto;
+    padding    : 0px;
+    width      : 1200px;
+}
+
+html,
+body {
+    background-color: white;
+    height          : 100%;
+}
+
+/* Стиль шапки страниц */
+.header {
+    background    : linear-gradient(to right, #00BFFF, #7B68EE);
+    display       : table-cell;
+    height        : 100px;
+    text-align    : center;
+    vertical-align: middle;
+}
+
+/* Стиль заголовка в шапке страницы */
+h1 {
+    color         : #000000;
+    font-size     : 45px;
+    font-weight   : 400;
+    text-transform: uppercase;
+}
+
+/* Контейнер содержит основную часть и подвал страницы */
+.container {
+    margin    : 0 auto;
+    min-height: 100%;
+    width     : 1200px;
+}
+
+/* Основная часть страницы */
+.content {
+    border       : 1px solid black;
+    border-radius: 10px;
+    margin       : 20px auto 0;
+    padding      : 0px;
+    text-align   : center;
+}
+
+/* Стиль заголовка в основной части страницы */
+h2 {
+    color      : #696969;
+    font-size  : 30px;
+    font-weight: 400;
+    margin-top : 10px;
+    text-align : center;
+}
+
+/* Стиль подзаголовка в основной части страницы */
+h3 {
+    color      : #696969;
+    font-size  : 25px;
+    font-weight: 400;
+    margin-top : 20px;
+    text-align : center;
+}
+
+/* Блок в личном кабинете с личными напоминаниями пользователя */
+.user_reminder {
+    background-color: #ffe4c4;
+    border          : 1px solid #ffe4c4;
+    border-radius   : 10px;
+}
+
+.user_reminder p {
+    color      : green;
+    font-size  : 20px;
+    font-weight: 300;
+}
+
+/* Блок в личном кабинете с групповыми напоминаниями пользователя */
+.parties_reminder {
+    background-color: #fff0f5;
+    border          : 1px solid #fff0f5;
+    border-radius   : 10px;
+}
+
+.parties_reminder p {
+    color      : green;
+    font-size  : 20px;
+    font-weight: 300;
+}
+
+/* Стиль текста на начальной странице о необходимости ввести логин и пароль */
+p.warning {
+    color      : red;
+    font-size  : 20px;
+    font-weight: 300;
+}
+
+/* Стиль для групп, в которых состоит пользователь */
+.parties {
+    background-color: #ffc0cb;
+    border          : 1px solid #ffc0cb;
+    border-radius   : 10px;
+}
+
+.parties p {
+    color      : blue;
+    font-size  : 20px;
+    font-weight: 400;
+}
+
+/* Стиль названий входных форм */
+label {
+    color      : #696969;
+    display    : block;
+    font-size  : 20px;
+    font-weight: 300;
+    margin     : 20px 0px 0px;
+}
+
+/* Стиль текста на формах */
+input {
+    color      : #000000;
+    font-size  : 20px;
+    font-weight: 300;
+    width      : 250px;
+}
+
+input:focus {
+    background: #e0ffff;
+}
+
+input:hover {
+    background-color: skyblue;
+}
+
+input[type=submit] {
+    font-size  : 20px;
+    font-weight: 300;
+    margin     : 20px;
+    padding    : 10px;
+    width      : 250px;
+}
+
+.clr {
+    height: 100px;
+}
+
+/* Стиль подвала страницы */
+.footer {
+    background : linear-gradient(to left, #00BFFF, #7B68EE);
+    font-size  : 20px;
+    font-weight: 300;
+    height     : 70px;
+    margin     : -100px auto 0;
+    padding-top: 30px;
+    text-align : center;
+    width      : 1200px;
+}
+
+/* Стиль кадендаря на личной странице пользователя */
+table {
+    background     : #e0ffff;
+    border-collapse: collapse;
+    border-radius  : 10px;
+    border-spacing : 5px;
+    text-align     : center;
+}
+
+th {
+    color        : #ff4500;
+    border-bottom: 2px solid #ff4500;
+    font-size    : 25px;
+    font-weight  : 300;
+    padding      : 12px 10px;
+}
+
+tbody tr:nth-child(2) {
+    border-bottom: 2px solid #ff4500;
+    padding      : 10px 0;
+}
+
+td {
+    color      : #696969;
+    font-size  : 20px;
+    font-weight: 300;
+    line-height: 25px;
+    padding    : 0;
+}
+
+/* Стиль для ссылок */
+a {
+    text-decoration: none;
+}
+
+td input[type=submit] {
+    background-color: #e0ffff;
+    border          : 1px solid #e0ffff;
+    font-size       : 20px;
+    font-weight     : 300;
+    margin          : 0;
+    padding         : 10px;
+    width           : 50px;
+}
+
+/* Когда мышка находится над клеткой календаря, появляется граница*/
+td input[type=submit]:hover {
+    border: 1px solid #1e90ff;
+}
+
+/* Кнопочки, которые на календаре показывают личные напоминания */
+input[type=submit].user_planner {
+    background-color: #ffff00;
+    font-size       : 20px;
+    font-weight     : 300;
+    padding         : 10px;
+    width           : 50px;
+}
+
+/* Кнопочки, которые на календаре показывают групповые напоминания */
+input[type=submit].parties_planner {
+    background-color: #ff69b4;
+    font-size       : 20px;
+    font-weight     : 300;
+    padding         : 10px;
+    width           : 50px;
+}
+
+input[type=radio] {
+    margin : 0;
+    padding: 0;
+}
+
+/* Сталь текстовой области для записи напоминания */
+textarea {
+    border     : 1px solid black;
+    color      : #000000;
+    font-size  : 20px;
+    font-weight: 300;
+}
+
+textarea:hover {
+    background-color: skyblue;
+}
